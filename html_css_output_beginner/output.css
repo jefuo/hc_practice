@@ -1,0 +1,89 @@
+header{
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+.README{
+    background-color:steelblue;
+    color: white;
+    padding: 10px;
+}
+header ul{
+    display: flex;
+    justify-content: space-around;
+    gap: 40px;
+    list-style: none;
+}
+header ul li{
+    /* 縦方向中央揃え */
+    line-height: 38.4px;
+}
+
+.main_visual img{
+    width: 100%;
+    height: 600px;
+}
+
+.contents{
+    padding: 0 4%;
+    text-align: center;
+}
+.self_intro p{
+    text-align: left;
+}
+.self_intro img{
+    border-radius: 50%;
+}
+.contents h1{
+    display: inline-block;
+    border-bottom:1px solid black ;
+}
+.profiles h3,.text{
+    text-align: center;    
+}
+.profiles img{
+    width: 100%;
+}
+footer p{
+    margin-top: 100px;
+    text-align: center;
+    font-size: 8px;
+}
+
+@media screen and (min-width: 600px) {
+    .contents{
+        width: 960px;
+        margin: 0 auto;
+    }
+    .container{
+        width: 60%;
+        margin: 0 auto;
+    }
+    .self_intro{
+        padding: 20px;
+        display: grid;
+        grid-template-columns: 4fr 1fr;
+    }
+    .self_intro h3{
+        text-align: left;
+        margin: 0;
+    }
+    .self_intro p{
+        grid-column: 1;
+        font-size: 12px;
+        width: 100%;
+    }
+    .self_intro img{
+        grid-column: 2;
+        grid-row: 1/3;
+        width: 80%;
+        padding: 15px;
+    }
+    .profiles{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 10px;
+        font-size: 10px;
+    }
+    
+}
