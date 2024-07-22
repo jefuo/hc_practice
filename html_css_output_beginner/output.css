@@ -2,8 +2,12 @@ header{
     display: flex;
     justify-content: space-around;
     gap: 20px;
+    /* 上下中央寄せ */
+    align-items: center;
+    /* 上下スペース空け */
+    margin: 10px;
 }
-.README{
+.logo{
     background-color:steelblue;
     color: white;
     padding: 10px;
@@ -11,12 +15,8 @@ header{
 header ul{
     display: flex;
     justify-content: space-around;
-    gap: 40px;
     list-style: none;
-}
-header ul li{
-    /* 縦方向中央揃え */
-    line-height: 38.4px;
+    gap: 0 40px;
 }
 
 .main_visual img{
